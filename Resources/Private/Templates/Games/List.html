@@ -1,0 +1,19 @@
+<table boarder="1" cellspacing="1" cellpadding="5">
+	<tr>
+		<td>Game Title</td>
+		<td>White Player</td>
+		<td>Play Date</td>
+	</tr>
+	<f:for each="{games}" as="game">
+		<tr>
+			<td>
+				<f:link.action controller="Games" action="show" arguments="{game:game}">
+					{game.title}
+				</f:link.action>
+			</td>
+			<td>{game.white}</td>
+			<td><f:format.date>{game.playDate}</f:format.date></td>
+		</tr>
+	</f:for>
+</table>
+<f:link.action controller="Games" action="new">Upload a new go game.</f:link.action>

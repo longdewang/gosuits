@@ -1,0 +1,17 @@
+<f:if condition="{game}">
+	<f:then>
+		<div class="header">
+			<h3>{game.title}</h3>
+		</div>
+		<div class="eidogo-player-auto" {f:if(condition: "{game.type} == 0", then: 'sgf="uploads/tx_goboard/{game.sgffile}"')}>
+			<f:if condition="{game.type} > 0">
+				{game.sgftext}
+			</f:if>
+		</div>
+	</f:then>
+
+	<f:else>
+
+	</f:else>
+
+</f:if>
