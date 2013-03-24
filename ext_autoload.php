@@ -1,7 +1,7 @@
 <?php
 
 /***************************************************************
- * Extension Manager/Repository config file for ext "news".
+ * Extension Manager/Repository config file for ext "gosuits".
  *
  * Auto generated 11-03-2013 18:03
  *
@@ -10,9 +10,9 @@
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$extensionClassesPath = t3lib_extMgm::extPath('goboard').'Classes/';
+$extensionClassesPath = t3lib_extMgm::extPath('gosuits').'Classes/';
 $default = array(
-	'tx_goboard_tca' => $extensionClassesPath.'class.tx_goboard_tca.php',
+	'tx_gosuits_tca' => $extensionClassesPath.'class.tx_gosuits_tca.php',
 );
 return $default;
 

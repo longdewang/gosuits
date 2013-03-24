@@ -1,5 +1,5 @@
 <?php
-    class Tx_Goboard_Domain_Model_GoBoard extends Tx_Extbase_DomainObject_AbstractEntity {
+    class Tx_Gosuits_Domain_Model_GoGame extends Tx_Extbase_DomainObject_AbstractEntity {
 /**
 	 * @var DateTime
 	 */

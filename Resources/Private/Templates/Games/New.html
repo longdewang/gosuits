@@ -1,18 +1,18 @@
-<h3>Let's upload a new go game.</h3>
-<p>The fields you leave blank will automatically enter info from the sgf content.</p>
+<h3><f:translate key="pi1_new_title" /></h3>
+<p><f:translate key="pi1_new_description" /></p>
 <f:form class="tx-goboard-form" method="post" controller="Games" action="create" name="newGame" object="{newGame}"  enctype="multipart/form-data">
-	<label for="title">Title</label>
+	<label for="title"><f:translate key="pi1_title" /></label>
 	<f:form.hidden id="type" property="type" value="0" />
 	<f:form.hidden id="pid" property="pid" value="73" />
 	<f:form.textfield id="title" property="title" size="46" /><br />
-	<label for="playdate">Play Date</label>
+	<label for="playdate"><f:translate key="pi1_playdate" /></label>
 	<input id="playdate" type="date" name="tx_gobaord_pi1[newGame][playDate]" /><br />
-	<label for="white">White Player</label>
+	<label for="white"><f:translate key="pi1_white" /></label>
 	<f:form.textfield id="white" property="white" size="46" /><br />
-	<label for="black">Black Player</label>
+	<label for="black"><f:translate key="pi1_black" /></label>
 	<f:form.textfield id="black" property="black" size="46" /><br />
-	<label for="sgffile">Please Choose a SGF File to Upload</label><br />
+	<label for="sgffile"><f:translate key="pi1_new_choosesgffile" /></label><br />
 	<f:form.upload id="sgffile" property="sgffile" /><br />
 
-	<f:form.submit value="Submit" />
+	<f:form.submit value={f:translate(key: 'pi1_submit')} />
 </f:form>

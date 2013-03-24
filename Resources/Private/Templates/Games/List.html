@@ -1,8 +1,8 @@
 <table boarder="1" cellspacing="1" cellpadding="5">
 	<tr>
-		<td>Game Title</td>
-		<td>White Player</td>
-		<td>Play Date</td>
+		<td><f:translate key="pi1_title" /></td>
+		<td><f:translate key="pi1_white" /></td>
+		<td><f:translate key="pi1_black" /></td>
 	</tr>
 	<f:for each="{games}" as="game">
 		<tr>
@@ -16,4 +16,4 @@
 		</tr>
 	</f:for>
 </table>
-<f:link.action controller="Games" action="new">Upload a new go game.</f:link.action>
+<f:link.action controller="Games" action="new"><f:translate key="pi1_upload_game" /></f:link.action>

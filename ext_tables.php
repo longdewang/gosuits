@@ -1,12 +1,13 @@
 <?php
 	if (!defined ('TYPO3_MODE')) die ('Access denied.');
 
-	include_once(t3lib_extMgm::extPath('goboard').'Classes/class.tx_goboard_tca.php');
-	//var_dump(tx_goboard_tca);
-	t3lib_extMgm::allowTableOnStandardPages('tx_goboard_domain_model_goboard');
-	$TCA['tx_goboard_domain_model_goboard'] = array (
+	include_once(t3lib_extMgm::extPath('gosuits').'Classes/class.tx_gosuits_tca.php');
+	//var_dump(tx_gosuits_tca);
+	t3lib_extMgm::allowTableOnStandardPages('tx_gosuits_domain_model_gogame');
+	$ll = 'LLL:EXT:gosuits/Resources/Private/Language/locallang_db.xml:';
+	$TCA['tx_gosuits_domain_model_gogame'] = array (
 		'ctrl' => array (
-			'title' => 'Go Game',
+			'title' => $ll.'tx_gosuits_domain_model_gogame',
 			'label' => 'title',
 			'tstamp' => 'tstamp',
 			'crdate' => 'crdate',
@@ -50,8 +51,8 @@
 					'items' => array(
 						array('', 0),
 					),
-					'foreign_table'       => 'tx_goboard_domain_model_goboard',
-					'foreign_table_where' => 'AND tx_goboard_domain_model_goboard.pid=###CURRENT_PID### AND tx_goboard_domain_model_goboard.sys_language_uid IN (-1,0)',
+					'foreign_table'       => 'tx_gosuits_domain_model_gogame',
+					'foreign_table_where' => 'AND tx_gosuits_domain_model_gogame.pid=###CURRENT_PID### AND tx_gosuits_domain_model_gogame.sys_language_uid IN (-1,0)',
 				)
 			),
 			'l10n_diffsource' => array(
@@ -149,8 +150,8 @@
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('Choose SGF File', 0),
-					array('Enter SGF Text', 1),
+					array($ll.'tx_gosuits_domain_model_gogame.type.I.0', 0),
+					array($ll.'tx_gosuits_domain_model_gogame.type.I.1', 1),
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -159,13 +160,13 @@
 		'sgffile' => array(
 			'exclude' => 0,
 			'l10n_mode' => 'mergeIfNotBlank',
-			'label' => 'The Sgf File',
+			'label' => $ll.'tx_suits_domain_model_gogame.sgffile',
 			'config' => array(
 				'type' => 'group',
 				'internal_type' => 'file',
 				'allowed' => 'sgf',
 				'disallowed' => 'php,php3',
-				'uploadfolder' => 'uploads/tx_goboard',
+				'uploadfolder' => 'uploads/tx_gosuits',
 				'size' => 1,
 				'minitems' => 0,
 				'maxitems' => 1,
@@ -174,7 +175,7 @@
 
 			'title' => array (
 				'exclude' => 0,
-				'label' => 'Game Title',
+				'label' => $ll.'tx_suits_domain_model_gogame.title',
 				'config' => array (
 					'type' => 'input',
 					'size' => '20',
@@ -184,14 +185,14 @@
 
 			'sgftext' => array (
 				'exclude' => 0,
-				'label' => 'Game Sgf text',
+				'label' => $ll.'tx_suits_domain_model_gogame.sgftext',
 				'config' => array (
 					'type' => 'text',
 					'eval' => 'required,trim'
 				)
 			),
 			'white' => array(
-				'label' => 'White Player',
+				'label' => $ll.'tx_suits_domain_model_gogame.white',
 				'config' => array(
 					'type' => 'input',
 					'size' => '20',
@@ -199,7 +200,7 @@
 				)
 			),
 			'black' => array(
-				'label' => 'Black Player',
+				'label' => $ll.'tx_suits_domain_model_gogame.black',
 				'config' => array(
 					'type' => 'input',
 					'size' => '20',
@@ -207,7 +208,7 @@
 				)
 			),
 			'playdate' => array(
-				'label' => 'Play Date',
+				'label' => $ll.'tx_suits_domain_model_gogame.playdate',
 				'config' => array(
 					'type' => 'input',
 					'size' => '20',
@@ -267,6 +268,6 @@
 	Tx_Extbase_Utility_Extension::registerPlugin(
 		$_EXTKEY,
 		'Pi1',
-		'The Go Game List'
+		'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_be.xml:pi1_title'
 	);
 ?>

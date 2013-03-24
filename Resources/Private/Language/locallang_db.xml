@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'news'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_gosuits_domain_model_gogame">Go Game</label>
+			<label index="tx_gosuits_domain_model_gogame.type.I.0">Choose SGF File</label>
+			<label index="tx_gosuits_domain_model_gogame.type.I.1">Enter SGF Text</label>
+			<label index="tx_gosuits_domain_model_gogame.title">Game Title</label>
+			<label index="tx_gosuits_domain_model_gogame.sgffile">The Sgf File</label>
+			<label index="tx_gosuits_domain_model_gogame.sgftext">The Sgf Text</label>
+			<label index="tx_gosuits_domain_model_gogame.white">White Player</label>
+			<label index="tx_gosuits_domain_model_gogame.black">Black Player</label>
+			<label index="tx_gosuits_domain_model_gogame.playdate">Play Date</label>
+		</languageKey>
+		<languageKey index="ch" type="array">
+			<label index="tx_gosuits_domain_model_gogame">围棋</label>
+			<label index="tx_gosuits_domain_model_gogame.type.I.0">选择 SGF 文件</label>
+			<label index="tx_gosuits_domain_model_gogame.type.I.1">输入 SGF 文本</label>
+			<label index="tx_gosuits_domain_model_gogame.title">对局标题</label>
+			<label index="tx_gosuits_domain_model_gogame.sgffile">Sgf 文件</label>
+			<label index="tx_gosuits_domain_model_gogame.sgftext">Sgf 文本</label>
+			<label index="tx_gosuits_domain_model_gogame.white">执白</label>
+			<label index="tx_gosuits_domain_model_gogame.black">执黑</label>
+			<label index="tx_gosuits_domain_model_gogame.playdate">对局日期</label>
+		</languageKey>
+
+	</data>
+</T3locallang>

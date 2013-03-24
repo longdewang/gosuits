@@ -11,17 +11,17 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array (
-	'title' => 'Go board',
-	'description' => 'A Go board extension, based on extbase & fluid. Powered by open source project eidogo.',
+	'title' => 'Go Suits',
+	'description' => 'A Go Suits extension, based on extbase & fluid. Powered by open source project eidogo.',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '0.1.0',
+	'version' => '0.1.2',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'beta',
+	'state' => 'alpha',
 	'uploadfolder' => 1,
 	'createDirs' => '',
 	'modify_tables' => '',

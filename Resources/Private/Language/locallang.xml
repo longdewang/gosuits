@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for backend of gosuits</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">Game Title</label>
+			<label index="pi1_white">White Player</label>
+			<label index="pi1_black">Black Player</label>
+			<label index="pi1_upload_game">Upload a game sgf file.</label>
+			<label index="pi1_new_title">Let's upload a new go game.</label>
+			<label index="pi1_new_description">The fields you leave blank will automatically enter info from the sgf content.</label>
+			<label index="pi1_new_choosesgffile">Please Choose a SGF File to Upload</label>
+			<label index="pi1_submit">Submit</label>
+			
+		</languageKey>
+
+		<languageKey index="ch" type="array">
+			<label index="pi1_title">对局标题</label>
+			<label index="pi1_white">执白</label>
+			<label index="pi1_black">执黑</label>
+			<label index="pi1_upload_game">上传一个对局 SGF 文件.</label>
+			<label index="pi1_new_title">让我们上传一个新的围棋对局.</label>
+			<label index="pi1_new_description">如果下列的项目保留空白，则在保存时根据 sgf 文件内容进行填充。</label>
+			<label index="pi1_new_choosesgffile">请选择一个要上传的 SGF 文件</label>
+			<label index="pi1_submit">提交</label>
+
+		</languageKey>
+	</data>
+</T3locallang>
