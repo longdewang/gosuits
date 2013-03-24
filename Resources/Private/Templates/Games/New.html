@@ -1,10 +1,10 @@
 <h3><f:translate key="pi1_new_title" /></h3>
 <p><f:translate key="pi1_new_description" /></p>
 <f:form class="tx-goboard-form" method="post" controller="Games" action="create" name="newGame" object="{newGame}"  enctype="multipart/form-data">
-	<label for="title"><f:translate key="pi1_title" /></label>
+	<label for="go_pi1_title"><f:translate key="pi1_title" /></label>
 	<f:form.hidden id="type" property="type" value="0" />
 	<f:form.hidden id="pid" property="pid" value="73" />
-	<f:form.textfield id="title" property="title" size="46" /><br />
+	<f:form.textfield id="go_pi1_title" property="title" size="46" /><br />
 	<label for="playdate"><f:translate key="pi1_playdate" /></label>
 	<input id="playdate" type="date" name="tx_gobaord_pi1[newGame][playDate]" /><br />
 	<label for="white"><f:translate key="pi1_white" /></label>
