@@ -160,7 +160,7 @@
 		'sgffile' => array(
 			'exclude' => 0,
 			'l10n_mode' => 'mergeIfNotBlank',
-			'label' => $ll.'tx_gosuits_domain_model_gogame.sgffile',
+			'label' => $ll.'tx_suits_domain_model_gogame.sgffile',
 			'config' => array(
 				'type' => 'group',
 				'internal_type' => 'file',
@@ -175,7 +175,7 @@
 
 			'title' => array (
 				'exclude' => 0,
-				'label' => $ll.'tx_gosuits_domain_model_gogame.title',
+				'label' => $ll.'tx_suits_domain_model_gogame.title',
 				'config' => array (
 					'type' => 'input',
 					'size' => '20',
@@ -185,14 +185,14 @@
 
 			'sgftext' => array (
 				'exclude' => 0,
-				'label' => $ll.'tx_gosuits_domain_model_gogame.sgftext',
+				'label' => $ll.'tx_suits_domain_model_gogame.sgftext',
 				'config' => array (
 					'type' => 'text',
 					'eval' => 'required,trim'
 				)
 			),
 			'white' => array(
-				'label' => $ll.'tx_gosuits_domain_model_gogame.white',
+				'label' => $ll.'tx_suits_domain_model_gogame.white',
 				'config' => array(
 					'type' => 'input',
 					'size' => '20',
@@ -200,7 +200,7 @@
 				)
 			),
 			'black' => array(
-				'label' => $ll.'tx_gosuits_domain_model_gogame.black',
+				'label' => $ll.'tx_suits_domain_model_gogame.black',
 				'config' => array(
 					'type' => 'input',
 					'size' => '20',
@@ -208,13 +208,11 @@
 				)
 			),
 			'playdate' => array(
-				'label' => $ll.'tx_gosuits_domain_model_gogame.playdate',
+				'label' => $ll.'tx_suits_domain_model_gogame.playdate',
 				'config' => array(
 					'type' => 'input',
-					'size' => '8',
-					'max' => '20',
+					'size' => '20',
 					'eval' => 'date',
-					'default' => '0',
 				)
 			),
 

@@ -13,12 +13,12 @@ CREATE TABLE tx_gosuits_domain_model_gogame (
 	endtime int(11) DEFAULT '0' NOT NULL,
 	fe_group varchar(100) DEFAULT '0' NOT NULL,
 	
-	type tinytext DEFAULT '0' NOT NULL,
+	type tinytext,
 	title varchar(255) DEFAULT '' NOT NULL,
-	white tinytext DEFAULT 'WHITE' NOT NULL,
-	black tinytext DEFAULT 'BLACK' NOT NULL,
+	white tinytext,
+	black tinytext,
 	playdate int(11) DEFAULT '0' NOT NULL,
-	sgftext text,
+	sgftext text NOT NULL,
 	sgffile text,
 
 	PRIMARY KEY (uid),

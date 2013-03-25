@@ -34,8 +34,9 @@
 			$path = $ffunc->getUniqueName($_FILES['tx_gosuits_pi1']['name']['newGame']['sgffile'], t3lib_div::getFileAbsFileName('uploads/tx_gosuits/'));
 			t3lib_div::upload_copy_move($_FILES['tx_gosuits_pi1']['tmp_name']['newGame']['sgffile'], $path);
 			$newGame->setSgfFile(basename($path));
-			$playdate = $newGame->getPlayDate()->getTimestamp();
-			$newGame->setPlayDate($playdate);
+			//$newGame->setWhite($path);
+			//print_r($_FILES);
+			$newGame->setBlack($newGame->getPlayDate());
 			$this->gamesRepository->add($newGame);
 			//$newGame->setBlack($newGame->getBlack());
 			$this->redirect('list', 'Games');     //, NULL, array('game' => $newGame));
