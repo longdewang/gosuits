@@ -6,7 +6,7 @@
 	<f:form.hidden id="pid" property="pid" value="73" />
 	<f:form.textfield id="go_pi1_title" property="title" size="46" /><br />
 	<label for="playdate"><f:translate key="pi1_playdate" /></label>
-	<input id="playdate" type="date" name="tx_gobaord_pi1[newGame][playDate]" /><br />
+	<input id="playdate" type="date" name="tx_gosuits_pi1[newGame][playDate]" /><br />
 	<label for="white"><f:translate key="pi1_white" /></label>
 	<f:form.textfield id="white" property="white" size="46" /><br />
 	<label for="black"><f:translate key="pi1_black" /></label>
@@ -14,5 +14,5 @@
 	<label for="sgffile"><f:translate key="pi1_new_choosesgffile" /></label><br />
 	<f:form.upload id="sgffile" property="sgffile" /><br />
 
-	<f:form.submit value={f:translate(key: 'pi1_submit')} />
+	<input type="submit" value={f:translate(key: pi1_submit)} />
 </f:form>

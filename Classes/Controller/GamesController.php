@@ -36,7 +36,7 @@
 			$newGame->setSgfFile(basename($path));
 			//$newGame->setWhite($path);
 			//print_r($_FILES);
-			$newGame->setBlack($newGame->getPlayDate());
+			//$newGame->setPlay($newGame->getPlayDate());
 			$this->gamesRepository->add($newGame);
 			//$newGame->setBlack($newGame->getBlack());
 			$this->redirect('list', 'Games');     //, NULL, array('game' => $newGame));
