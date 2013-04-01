@@ -64,7 +64,7 @@
 	/**
 	 * @var DateTime
 	 */
-	protected $playDate;
+	protected $playdate;
 
 	/**
 	 * @var string
@@ -280,22 +280,22 @@
 	}
 
 	/**
-	 * Get playDate
+	 * Get playdate
 	 *
 	 * @return DateTime
 	 */
 	public function getPlayDate() {
-		return $this->playDate;
+		return $this->playdate;
 	}
 
 	/**
-	 * Set playDate
+	 * Set playdate
 	 *
-	 * @param DateTime $playdate playDate
+	 * @param DateTime $playdate playdate
 	 * @return void
 	 */
 	public function setPlayDate($playdate) {
-		$this->playDate = $playdate;
+		$this->playdate = $playdate;
 	}
 	public function getWhite() {
 		return $this->white;

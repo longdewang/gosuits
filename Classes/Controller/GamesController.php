@@ -39,7 +39,7 @@
 			//$newGame->setPlay($newGame->getPlayDate());
 			$this->gamesRepository->add($newGame);
 			//$newGame->setBlack($newGame->getBlack());
-			$this->redirect('list', 'Games');     //, NULL, array('game' => $newGame));
+			$this->redirect('show', 'Games', array('game'=>$newGame));     //, NULL, array('game' => $newGame));
 		}
 
 	}

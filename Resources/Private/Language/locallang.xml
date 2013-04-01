@@ -14,6 +14,8 @@
 			<label index="pi1_new_description">The fields you leave blank will automatically enter info from the sgf content.</label>
 			<label index="pi1_new_choosesgffile">Please Choose a SGF File to Upload</label>
 			<label index="pi1_submit">Submit</label>
+			<label index="pi1_playdate">Play Date</label>
+
 			
 		</languageKey>
 
@@ -26,6 +28,8 @@
 			<label index="pi1_new_description">如果下列的项目保留空白，则在保存时根据 sgf 文件内容进行填充。</label>
 			<label index="pi1_new_choosesgffile">请选择一个要上传的 SGF 文件</label>
 			<label index="pi1_submit">提交</label>
+			<label index="pi1_playdate">对局日期</label>
+
 
 		</languageKey>
 	</data>

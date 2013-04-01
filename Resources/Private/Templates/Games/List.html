@@ -1,8 +1,9 @@
-<table boarder="1" cellspacing="1" cellpadding="5">
+<table border="1" cellspacing="1" cellpadding="5">
 	<tr>
 		<td><f:translate key="pi1_title" /></td>
 		<td><f:translate key="pi1_white" /></td>
 		<td><f:translate key="pi1_black" /></td>
+		<td><f:translate key="pi1_playdate" /></td>
 	</tr>
 	<f:for each="{games}" as="game">
 		<tr>
@@ -12,7 +13,8 @@
 				</f:link.action>
 			</td>
 			<td>{game.white}</td>
-			<td><f:format.date>{game.playDate}</f:format.date></td>
+			<td>{game.black}</td>
+			<td><f:format.date>{game.playdate}</f:format.date></td>
 		</tr>
 	</f:for>
 </table>
